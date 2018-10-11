@@ -1,16 +1,23 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import "./App.css";
-import Logo from "../components/templates/Logo";
-import Nav from "../components/templates/Nav";
-import Main from "../components/templates/Main";
-import Footer from "../components/templates/Footer";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
+import Logo from '../components/templates/Logo';
+import Nav from '../components/templates/Nav';
+import Main from '../components/templates/Main';
+import Footer from '../components/templates/Footer';
 
 export default props => (
   <div className="app">
     <Logo />
     <Nav />
-    <Main />
+    <Main
+      icon="home"
+      title="Início"
+      subtitle="Segundo projeto do capítulo de React"
+    />
     <Footer />
   </div>
 );
